@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "navbar": "/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "position": "/pages/components/drink/position",
+    "drinkDetail": "/pages/components/drink/drinkdetail",
+    "cart": "/pages/components/cart/cart"
+  },
+  "navigationStyle": "custom"
+}

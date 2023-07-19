@@ -1,0 +1,110 @@
+<!--pages/components/cart/cart.wxml-->
+<view class="cartAll">
+<view>
+    <image src="https://ts1.cn.mm.bing.net/th/id/R-C.ff6947478474f25b8c6e97564f624c03?rik=b06udJKqraJ1qA&riu=http%3a%2f%2ficon.chrafz.com%2fuploads%2fallimg%2f160920%2f1-1609201559320-L.png&ehk=%2b2F47IwwKw8hqFdwLlhH%2bWrBMgP3RisNK%2fbHbKiW2%2fI%3d&risl=&pid=ImgRaw&r=0" mode="" class="cart"/>
+</view>
+<view class="cartWord">
+  <view class="cartWord1">
+    总价：￥{{all}}
+  </view>
+  <view class="cartWord2" bindtap="showPopup">
+    查看明细
+    <text style="color: crimson; display: inline-block; transform: translateX(80rpx);" catchtap="delAll">清空</text>
+  </view>
+</view>
+<view class="final" bindtap="final">
+  去结算
+</view>
+
+</view>
+<van-popup
+  show="{{ show }}"
+  position="bottom"
+  custom-style="height: 60%;"
+  bind:close="onClose"
+  round
+  >
+  <view class="allMilk">
+    <view wx:for="{{listReal}}" wx:key="index" class="milkTeas" wx:if="{{item.price != 0}}">
+      <view class="teaPhoto">
+					<image src = "{{item.showPhoto}}" class="{{item.showPhoto=='https://roninz.oss-cn-beijing.aliyuncs.com/milkTea8.png'||item.showPhoto=='https://roninz.oss-cn-beijing.aliyuncs.com/milkTea7.png'||item.showPhoto=='https://roninz.oss-cn-beijing.aliyuncs.com/milkTea6.png'||item.showPhoto=='https://roninz.oss-cn-beijing.aliyuncs.com/milkTea5.png'?'rightTea':null}}"></image>
+				</view>
+				<view class="teaContent" >
+					<view class="teaName">
+						{{item.showMsg}}
+					</view>
+					<view class="price">
+						总价￥{{item.price}} 
+					</view>
+          <span style="display: inline-block; font-size: 14px; color: crimson; transform: translateX(20rpx);" bindtap="del" data-index="{{index}}">
+            删除
+          </span>
+				</view>
+      </view>
+  
+  </view>
+  
+  </van-popup>
+
+  <van-popup
+  show="{{ show2 }}"
+  custom-style="height: 60%;"
+  bind:close="onClose2"
+  round
+  >
+  <view class="infoMsg">
+  <view class="top">账单信息确认</view>
+    <view class="inner">
+        <view class="innerWord">
+          姓名：{{nickName}}
+        </view>
+        <view class="innerWord">
+          地址：<text style="font-size: 15px;">{{location}}</text>
+        </view>
+        <view class="innerWord">
+          商家：猫谱饮品店
+        </view>
+        <view class="innerWord">
+          运费：￥0
+        </view>
+        <view class="innerWord">
+          配送方式：{{way}}
+        </view>
+        <view class="innerWord">
+          手机号码：{{phone}}
+        </view>
+        <view class="innerWord">总价：￥{{all}} <text class="cartWord3" bindtap="showPopup">查看明细</text> </view>
+    </view>
+  <view class="bottom">
+    <view class="cancle" bindtap="cancle">取消</view>
+    <view class="define" bindtap="define">确认</view>
+  </view>
+
+  </view>
+  </van-popup>
+
+  <van-popup
+  show="{{ show3 }}"
+  custom-style="height: 20%;"
+  bind:close="onClose3"
+  round
+  >
+    <view class="payInner">
+      <view class="payTop">请选择你的支付方式</view>
+      <view class="payWays">
+        <view class="payWay" bindtap="pay" wx:for="{{listPay}}" wx:key="index">
+          <image src="{{item.img}}" mode="" class="payImg"/>
+          <view class="payWord">{{item.word}}</view>
+        </view>
+        <!-- <view class="payWay"bindtap="pay">
+          <image src="https://roninz.oss-cn-beijing.aliyuncs.com/chat.png" mode="" class="payImg"/>
+          <view class="payWord">微信</view>
+        </view>
+        <view class="payWay" bindtap="pay">
+          <image src="https://roninz.oss-cn-beijing.aliyuncs.com/QQ.png" mode="" class="payImg"/>
+          <view class="payWord">QQ</view>
+        </view> -->
+      </view>
+    </view>
+
+  </van-popup>

@@ -1,0 +1,21 @@
+<!--pages/components/drink/position.wxml-->
+<view class="positionAll">
+		<view class="innerContent">
+			<view class="">
+				<image src="/static/drink/star.png" mode="" class = "star"></image>
+				<span class = "positionDetail">晋中榆次店</span>
+			</view>
+			<view class="positionContent">
+				<image src="/static/drink/position.png" mode="" class = "position"></image>
+				<span class = "positionDetails">距离您2.0km</span>
+			</view>
+			<view class="choose">
+				<view class="getSelf {{name == 'getSelf'?'chooseMethod':null}}"  bindtap = "chooseMethod" data-way="getSelf">
+					自取
+				</view>
+				<view class="getOther {{name == 'getOther'?'chooseMethod':null}}" bindtap = "chooseMethod" data-way="getOther">
+					配送
+				</view>
+			</view>
+		</view>
+	</view>

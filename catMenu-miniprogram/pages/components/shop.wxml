@@ -1,0 +1,24 @@
+<!--pages/components/shop.wxml-->
+<view class="community">
+  <view class="push"></view>
+  <navbar vue-id="7d88a7a8-1" backgroundColor="transparent" border="{{true}}" vue-slots="{{['default']}}" class="navBarEdit">
+    <block>
+      <image class="navBarInfo" src="/static/navigator/neiko.png" mode></image>
+      <view class="navWord">猫谱商城</view>
+    </block>
+  </navbar>
+  <view class="drinkSearch">
+    <input class="searchInput" type="text" placeholder="搜索奶茶" />
+    <image class="search" src="../../static/drink/drinkSearch.png"/>
+  </view>
+<swiper class="banner" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}">
+  <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <swiper-item>
+      <image class="shopImg" src="{{item}}" mode></image>
+    </swiper-item>
+  </block>
+</swiper>
+<moreContent listMore = "{{listMore}}" bind:moreContentCart="cartAdd"></moreContent>
+<cart listCart="{{listCart}}"></cart>
+</view>
+

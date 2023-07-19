@@ -1,0 +1,42 @@
+<!--pages/components/info/moreFL/moreFL.wxml-->
+<view class="fl">
+  <view class="flLeft">
+    <view class="leftContent">
+      <view class="content">
+        积分
+      </view>
+      <view class="count">
+        {{count1}}
+      </view>
+    </view>
+    <view class="rightContent">
+      <image src="https://roninz.oss-cn-beijing.aliyuncs.com/score.png" mode="" class="rightImg"/>
+    </view>
+  </view>
+   <view class="flRight">
+    <view class="leftContent">
+      <view class="content">
+        卡卷
+      </view>
+      <view class="count">
+        {{count2}}
+      </view>
+    </view>
+    <view class="rightContent">
+      <image src="https://roninz.oss-cn-beijing.aliyuncs.com/coupon.png" mode="" class="rightImg"/>
+    </view>
+   </view>
+</view>
+<view class="fl2">
+  <view class="fl2Left">
+    <view class="content">
+        优惠卷
+      </view>
+      <view class="count">
+        {{count3}}
+      </view>
+  </view>
+  <view class="fl2Right">
+    <image src="https://roninz.oss-cn-beijing.aliyuncs.com/gift.png" mode="" class="rightImg2"/>
+  </view>
+</view>

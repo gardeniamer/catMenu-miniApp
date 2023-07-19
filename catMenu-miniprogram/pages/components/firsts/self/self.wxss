@@ -1,0 +1,146 @@
+/* pages/components/firsts/self/self.wxss */
+.community {
+  background: rgba(222,236,221, .6) url("https://img.js.design/assets/img/64928165a27306875bf90745.png#569ba6258bdba823e72454e24ca94f49");
+	background-repeat: no-repeat;
+  background-size: 100%;
+  height: 1700rpx;
+}
+
+.navWord {
+	width: 100%;
+	height: 100%;
+  font-size: 16px;
+  font-weight: bold;
+	text-align: center;
+	line-height: 45px;
+}
+
+.push {
+  width: 100%;
+  height: 35rpx;
+}
+
+.choose {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.choice {
+  margin: 0 20rpx 0 20rpx;
+  padding: 8rpx;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sChoice {
+  border-bottom: 4px solid#5a8f7b;
+}
+
+.inputArea {
+  display: inline-block;
+  width: 300rpx;
+  height: 50rpx;
+}
+
+.wordArea {
+  display: inline-block;
+  width: 200rpx;
+  height: 60rpx;
+  transform: translate(180rpx,20rpx);
+  border-radius:30rpx;
+  border: 2px solid #d2d2d2;
+  line-height: 60rpx;
+  font-weight: normal;
+}
+
+.wordInput {
+  display: inline-block;
+  width: 150rpx;
+  height: 60rpx;
+  transform: translateX(10rpx);
+  font-size: 14px;
+}
+
+.searchIcon {
+  width: 38rpx;
+  height: 38rpx;
+  transform: translate(2rpx,-10rpx);
+}
+
+.shops {
+  margin: 20rpx auto 20rpx auto;
+  width: 80%;
+  height: 340rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.finalShop {
+  margin: 0 auto;
+  width: 95%;
+  height: 320rpx;
+  transform: translateY(10rpx);
+  display: flex;
+  flex-direction: row;
+}
+
+.shopMsg {
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.menu {
+  width: 30%;
+  height: 100%;
+  border-left: 2px solid #d8e7e2;
+}
+
+.shopName {
+  font-weight: bold;
+}
+
+.patterns {
+  display: flex;
+  flex-direction: row;
+}
+
+.pattern {
+  display: inline-block;
+  margin: 20rpx 20rpx 0 0;
+  padding: 12rpx;
+  border-radius: 16rpx;
+  background-color: #daebe5;
+  font-size: 12px;
+  color: #5d917d;
+  font-weight: bold;
+}
+
+.special {
+  background-color: #5db393;
+  color: #fff;
+}
+
+.moreMsg {
+  margin: 20rpx 0 20rpx 0;
+  font-size: 12px; 
+  color: #858585;
+}
+
+.innerContent {
+  text-align: center;
+  transform: translateY(86rpx);
+}
+
+.innerWord {
+  font-size: 14px;
+  margin: 0 0 40rpx 0;
+  font-weight: bold;
+}
+
+.innerImg {
+  margin: 10rpx;
+  width: 60rpx;
+  height: 60rpx;
+}

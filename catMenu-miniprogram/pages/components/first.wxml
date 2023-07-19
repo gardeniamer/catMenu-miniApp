@@ -1,0 +1,66 @@
+<!--pages/components/first.wxml-->
+<view class="community">
+  <view class="push"></view>
+  <view class="topDec">
+    <view class="top">
+      猫谱
+      <view class="wordArea">
+        <input type="text" class="wordInput" placeholder="搜索"/>
+        <image src="https://roninz.oss-cn-beijing.aliyuncs.com/Search.png"  mode="" class="searchIcon"/> 
+      </view>
+    </view>
+  </view>
+  <swiper class="banner" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}">
+  <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <swiper-item>
+      <image class="shopImg" src="{{item}}" mode></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="vip">
+  <view class="vipImgs">
+    <image src="/static/navigator/neiko.png" mode="" class="vipImg"/>
+  </view>
+  <view class="vipWord"> 
+    <view class="vipWord1">
+      猫谱会员
+    </view> 
+    <view class="vipWord2">
+      再升1级可享（升级礼包）等6项权益
+    </view>
+  </view>
+  <view class="more1">
+    <view style="font-weight: bold;">
+      200
+    </view>
+    <view style="font-size: 12px;">
+      积分
+    </view>
+  </view>
+  <view class="more1">
+    <view style="font-weight: bold;">
+      0
+    </view>
+    <view style="font-size: 12px;">
+      卡卷
+    </view>
+  </view>
+</view>
+<first01></first01>
+  <view class="ways2" bindtap="showPopup">
+    <image src="https://roninz.oss-cn-beijing.aliyuncs.com/friend.png" mode="" class="ways2Img" />
+    <span style="font-weight: bold;">
+      好友拼单
+    </span>
+    <view class="ways2Word">呼朋唤友一起拼 ></view>
+  </view>
+  <view class = "mainDec">
+    <image src="https://roninz.oss-cn-beijing.aliyuncs.com/main.png" mode="" class="img01"/>
+    <image src="https://roninz.oss-cn-beijing.aliyuncs.com/main2.png" mode="" class="img02"/>
+    <image src="https://roninz.oss-cn-beijing.aliyuncs.com/paws.png" mode="" class="imageDec"/>
+  </view>
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 25%;" bind:close="onClose" class="bottom" round>
+    <first01></first01>
+</van-popup>
+
+</view>

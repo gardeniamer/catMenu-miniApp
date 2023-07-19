@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "info-user": "/pages/components/info/infouser/infouser",
+    "info-more": "/pages/components/info/infoMore",
+    "navbar": "/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "info-moreFL": "/pages/components/info/moreFL/moreFL"
+  },
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,24 @@
+/* pages/components/firsts/first01/first01.wxss */
+.ways {
+  margin: 20rpx 0 20rpx 0;
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.way {
+  width: 340rpx;
+  height: 95%;
+  background-color: #fff;
+  border-radius: 16rpx;
+  transform: translateY(6rpx);
+  text-align: center;
+}
+
+.wayImg {
+  width: 150rpx;
+  height: 150rpx;
+  transform: translateY(10rpx);
+}

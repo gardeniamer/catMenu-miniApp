@@ -1,0 +1,57 @@
+/* pages/components/info/myorders/myorders.wxss */
+
+.searchIcon {
+  width: 38rpx;
+  height: 38rpx;
+  transform: translateY(8rpx);
+}
+
+.research {
+  width: 100%;
+  height: 80rpx;
+  background-color: #f0f0f0;
+}
+
+.area {
+  margin: auto;
+  width: 90%;
+  height: 75rpx;
+  background-color: #fff;
+  border-radius: 45rpx;
+  transform: translateY(3rpx);
+  text-align: center;
+  line-height: 75rpx;
+  font-size: 14px;
+  color: 	#808080;
+}
+
+.change {
+  margin: 16rpx auto;
+  width: 680rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single {
+  width: 18%;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 60rpx;
+}
+
+.sSingle {
+  border-bottom:1px solid #FF4500;
+  color: #FF4500
+}
+
+.final {
+  width: 100%;
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  color: #808080;
+}

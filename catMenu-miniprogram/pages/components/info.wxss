@@ -1,0 +1,98 @@
+
+.community {
+  background: rgba(222,236,221, .6) url("https://img.js.design/assets/img/64928165a27306875bf90745.png#569ba6258bdba823e72454e24ca94f49");
+	background-repeat: no-repeat;
+  background-size: 100%;
+  height: 1560rpx;
+}
+
+.push {
+  width: 100%;
+  height: 55rpx;
+}
+
+.push3 {
+  width: 100%;
+  height: 35rpx;
+}
+
+.navBarInfo {
+	width: 60rpx;
+	height: 55rpx;
+	transform: translate(130rpx,16rpx);
+}	
+	
+.navWord {
+	width: 100%;
+	height: 100%;
+  font-size: 16px;
+  font-weight: bold;
+	text-align: center;
+	line-height: 48px;
+}
+
+.left {
+	display: inline-block;
+	-webkit-transform: translate(20rpx,10rpx);
+	        transform: translate(20rpx,10rpx);
+}
+.right {
+  float: right;
+	display: inline-block;
+	font-size: 12px;
+	color: #a2a2a2;
+	-webkit-transform: translate(-20rpx,14rpx);
+	        transform: translate(-20rpx,14rpx);
+}
+.obj {
+	width: 140rpx;
+	height: 70%;
+	text-align: center;
+}
+
+.myMsg {
+  margin: 30rpx auto 30rpx auto;
+  width: 700rpx;
+  height: 160rpx;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.myMsgLeft,.myMsgRight {
+  width: 350rpx;
+  height: 140rpx;
+  text-align: center;
+}
+
+.myMsgLeft {
+  border-right: 2px solid #9ed9c4;
+}
+
+.msgPhoto {
+  width: 80rpx;
+	height: 70rpx;
+}
+
+.msgWord {
+  font-size: 15px;
+}
+
+.moreImg {
+	width: 28px;
+	height: 25px;
+}
+.imgContent {
+  width: 140rpx;
+	font-size: 12px;
+}
+.push2 {
+	width: 100%;
+	height: 10rpx;
+}
+
+
+

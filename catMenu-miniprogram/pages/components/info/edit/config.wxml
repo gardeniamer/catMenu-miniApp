@@ -1,0 +1,42 @@
+<!--pages/components/info/edit/config.wxml-->
+<view class="community">
+  <view class="push"></view>
+  <view class = "msgs" wx:for="{{list}}" wx:key="index">
+    <text class="lMsg">{{item.tag}}</text>
+    <block wx:if="{{index == 0}}">
+      <text class="id">{{id}}</text>
+    </block>
+    <block wx:if="{{index == 1}}">
+      <image src="{{image}}" mode="" class="img"><button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" class="btn"></button> </image> 
+      <text class="imgP">></text>
+    </block>
+    <block wx:if="{{index == 2}}">
+      <text class="id2" bindtap="nickName">{{nickName}} ></text>
+      <van-popup show="{{ show }}" position="bottom" custom-style="height: 40%;" bind:close="onClose" class="bottom" round>
+        <input type="nickname" value="{{nickName}}" class = "inputContent" bindblur="inputContent" maxlength="8" wx:if="{{more == 0}}"/>
+        <input type="nickname" placeholder="请输入姓名" class = "inputContent" bindblur="inputContent" maxlength="5" wx:if="{{more == 1}}"/>
+        <input type="nickname" placeholder="请输入手机号" class = "inputContent" bindblur="inputContent" maxlength="11" wx:if="{{more == 2}}"/>
+      <view class="btnMore" bindtap="onClose">
+          修改信息
+      </view>
+      </van-popup>
+    </block>
+    <block wx:if="{{index == 4}}">
+      <text class="gender">      
+        <text class="man {{gender == 0? 'chooseGender': null}}" bindtap="gender" data-info="{{0}}">男</text>
+        <text class="woman {{gender == 1? 'chooseGender': null}}" bindtap="gender" data-info="{{1}}">女</text>
+      </text>
+    </block>
+    <span class = "rMsg" wx:if="{{ index == 3}}" bindtap="real">
+      {{item.content}}
+    </span>
+    <span class = "rMsg" wx:if="{{index == 5 && phone == 0}}" >
+      <text class="word" bindtap="real2">{{item.content}}</text>
+    </span>
+  </view>
+  <view class="push2"></view>
+  <view class="remove" bindtap="remove">
+    退出登录
+  </view>
+  <view class="push2"></view>  
+</view>

@@ -1,0 +1,19 @@
+<!--pages/components/info/myorders/myorders.wxml-->
+<view class="research">
+  <view class="area">
+  <image src="https://roninz.oss-cn-beijing.aliyuncs.com/Search.png" mode="" class="searchIcon"/>
+    搜索
+  </view>
+</view>
+<view class = "change">
+  <view 
+  class="single {{ sSingles == index? 'sSingle': '' }}" 
+  wx:for="{{list}}" 
+  wx:key="index"
+  bindtap="changeSingle" data-info="{{index}}">
+    {{item}}
+  </view>
+</view>
+<view class = "final">
+  无相关内容
+</view>

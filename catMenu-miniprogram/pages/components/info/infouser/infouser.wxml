@@ -1,0 +1,51 @@
+<!--pages/components/info/infouser/infouser.wxml-->
+<view class="allUser">
+  <view data-event-opts="{{[['tap',[['login']]]]}}" class="leftPhoto" >
+      <image src="{{image}}" mode="" class="imgReal"/>
+  </view>
+  <view class="rightMsg">
+    <view data-event-opts="{{[['tap',[['login']]]]}}" class="topMsg" bindtap="showPopup" wx:if="{{special == 0}}">
+      {{content}}
+    </view>
+    <view data-event-opts="{{[['tap',[['login']]]]}}" class="topMsg"  wx:if="{{special == 1}}">
+      {{content}} 
+      <span class="level">lv{{level}}</span>
+    </view>
+    <view class="bottomMsg" wx:if="{{special == 1}}">
+				<!-- <view class="badge" wx:for = "{{list}}" wx:key = "index">
+					{{item}}
+				</view> -->
+        <view class="showSection">
+          <view class="showReal">
+            
+          </view>
+        </view>
+        <view class="showWord">
+          {{now}}/{{all}}
+        </view>
+		</view>
+  </view>
+      <view class="edit" wx:if="{{special == 1}}">
+      <view class = "location" bindtap="location">
+        <image src="/static/drink/position.png" mode=""/>
+        <view>
+          地址
+        </view>
+      </view>
+      <view class = "modify" bindtap="config">
+        <image src="/static/info/config.png" mode=""/>
+        <view>
+          设置
+        </view>
+      </view>
+    </view>
+</view>
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 40%;" bind:close="onClose" class="bottom" round>
+  <view data-event-opts="{{[['tap',[['login']]]]}}" class="leftPhotos" >
+<image src="{{image}}" mode="" class="img"><button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" class="btnMore"></button> </image >  
+  <input type="nickname" placeholder="输入您的昵称" class = "inputContent" bindblur="inputContent" maxlength="8"/>
+  <view class="btn" bindtap="onClose">
+    登录
+  </view>
+  </view>
+</van-popup>

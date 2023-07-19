@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index",
+    "first01": "/pages/components/firsts/first01/first01"
+  },
+  "navigationStyle": "custom"
+}

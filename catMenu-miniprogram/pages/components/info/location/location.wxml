@@ -1,0 +1,26 @@
+<!--pages/components/info/location/location.wxml-->
+
+<view class="community">
+  <view class = "push"></view>
+  <view class = "userLocation" wx:for="{{list}}" wx:key="index" wx:if="{{item != null}}">
+    <view class="top">
+      {{nickname}}
+    </view>
+    <view class="bottom">
+      {{item}}
+    </view>
+    <view class="edit">
+      <span class = "default" wx:if = "{{index == 0}}">默认地址</span>
+      <span class = "default" bindtap="default" data-index="{{index}}"
+      wx:else>设为默认地址</span>
+      <span class = "decline" bindtap="decline" data-index="{{index}}">删除
+      </span>
+    </view>
+  </view>
+  <view class = "locationMore" bindtap="more">
+    点击添加收货地址 +
+  </view>
+  <view class = "push"></view>
+</view>
+
+

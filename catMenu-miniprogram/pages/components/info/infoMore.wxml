@@ -1,0 +1,8 @@
+<view class="function">
+  <view class="functionTop">
+    <slot name="top"></slot>
+  </view>
+  <view class="functionBottom">
+    <slot name="bottom"></slot>
+  </view>
+</view>

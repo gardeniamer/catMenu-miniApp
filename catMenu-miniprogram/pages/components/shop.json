@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "navbar": "/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "moreContent": "/pages/components/shop/moreContent/moreContent",
+    "cart":"/pages/components/cart/cart"
+  },
+  "navigationStyle": "custom",
+  "onReachBottomDistance": 100
+}

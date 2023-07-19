@@ -1,0 +1,18 @@
+<!--pages/components/firsts/first01/first01.wxml-->
+
+  <view class = "ways">
+      <view class="way"  bindtap="bySelf">
+        <image src="https://roninz.oss-cn-beijing.aliyuncs.com/own.png" mode="" class="wayImg"/>
+        <view style="font-weight: bold;">
+          门店自取
+        </view>
+      </view>
+      <view class="way" bindtap="byOther">
+        <image src="https://roninz.oss-cn-beijing.aliyuncs.com/other.png" mode="" class="wayImg"/>
+        <view style="font-weight: bold;">
+          外送
+        </view>
+      </view>
+  </view>
+
+

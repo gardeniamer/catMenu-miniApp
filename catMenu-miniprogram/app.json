@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/components/first",    
+    "pages/components/drinks",
+    "pages/components/info",
+    "pages/components/shop",
+    "pages/components/info/edit/config",
+    "pages/components/info/location/location",
+    "pages/components/info/myorders/myorders",
+    "pages/components/firsts/self/self",
+    "pages/components/info/locationCopy/locationCopy"
+  ],
+  "requiredPrivateInfos": [
+    "chooseLocation"
+  ], 
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "navigationStyle": "default",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "position": "bottom",
+    "selectedColor": "#95d6bf",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "./static/navigator/first.png",
+        "selectedIconPath": "static/navigator/s_first.png",
+        "pagePath": "pages/components/first"
+      },
+      {
+        "text": "点单",
+        "iconPath": "./static/navigator/drink.png",
+        "selectedIconPath": "static/navigator/s_drink.png",
+        "pagePath": "pages/components/drinks"
+      },
+      {
+        "text": "商城",
+        "iconPath": "./static/navigator/shop.png",
+        "selectedIconPath": "static/navigator/s_shop.png",
+        "pagePath": "pages/components/shop"
+      },
+      {
+        "text": "我的",
+        "iconPath": "./static/navigator/info.png",
+        "selectedIconPath": "static/navigator/s_info.png",
+        "pagePath": "pages/components/info"
+      }
+    ]
+
+  },
+  "style": "v2",
+  "usingComponents": {}
+}

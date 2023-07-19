@@ -1,0 +1,19 @@
+<!--pages/components/drinks.wxml-->
+<view class="community">
+		<view class="push">
+			
+		</view>
+    <navbar vue-id="7d88a7a8-1" backgroundColor="transparent" border="{{true}}"  vue-slots="{{['default']}}" class="navBarEdit">
+    <block>
+      <image class="navBarInfo" src="/static/navigator/neiko.png" mode></image>
+      <view class="navWord">猫谱</view>
+    </block>
+  </navbar>
+		<view class="drinkSearch">
+			<input type="text" class = "searchInput" placeholder = "搜索奶茶" />
+			<image src="/static/drink/drinkSearch.png" mode="" class = "search"></image>
+		</view>
+		<position></position>
+		<drinkDetail bind:moreContentCart="cartAdd"></drinkDetail>
+    <cart listCart="{{listCart}}"></cart>
+	</view>

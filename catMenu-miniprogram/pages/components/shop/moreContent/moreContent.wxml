@@ -1,0 +1,29 @@
+<!--pages/components/shop/moreContent/moreContent.wxml-->
+<view class="showMsg">
+			<view class="show" wx:for = "{{list2}}" wx:key = "index">
+				<view class="showPhoto">
+					<image  src= '{{item.showPhoto}}' mode=""></image>
+				</view>
+				<view class="showContent">
+					<view class="msg">
+						{{item.msg}}
+					</view>
+					<view class="advantage">
+						<span wx:for = "{{item.advantage}}" wx:for-item="item2"  wx:for-index="index2" wx:key="index2">
+						{{item2}}
+						</span>	
+					</view>
+					<view class="price">
+						<span class = "priceNow">{{item.priceNow}}</span>
+            <image src="https://ts1.cn.mm.bing.net/th/id/R-C.ff6947478474f25b8c6e97564f624c03?rik=b06udJKqraJ1qA&riu=http%3a%2f%2ficon.chrafz.com%2fuploads%2fallimg%2f160920%2f1-1609201559320-L.png&ehk=%2b2F47IwwKw8hqFdwLlhH%2bWrBMgP3RisNK%2fbHbKiW2%2fI%3d&risl=&pid=ImgRaw&r=0" mode="" class = "nowImg" bindtap="add" data-index="{{item}}"/>
+					</view>
+				</view>
+			</view>
+</view>
+<view class="finalWord" wx-if="{{show == 0}}">
+			-----下拉生成更多-----
+</view>
+<view class="finalWord" wx-if="{{show == 1}}">
+			-----没有更多了-----
+</view>
+

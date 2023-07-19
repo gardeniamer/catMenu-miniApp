@@ -1,0 +1,56 @@
+<!--pages/components/firsts/self/self.wxml-->
+<view class="community">
+  <view class="push"></view>
+  <navbar vue-id="7d88a7a8-1" left-icon = "back"
+  backgroundColor="transparent" 
+  border="{{true}}" 
+  vue-slots="{{['default']}}" 
+  class="navBarEdit"
+  bindtap="onClickLeft">
+      <block>
+        <view class="navWord">门店列表</view>
+      </block>
+  </navbar>
+  <view class="choose">
+    <text class="choice {{sChoice == 1? 'sChoice': null}}" bindtap="changeShop" data-info = "{{1}}">附近门店</text>
+    <text class="choice {{sChoice == 2? 'sChoice': null}}" bindtap="changeShop" data-info = "{{2}}">常用门店</text>
+    <view class="wordArea">
+        <input type="text" class="wordInput" placeholder="搜索门店" maxlength="10"/>
+        <image src="https://roninz.oss-cn-beijing.aliyuncs.com/Search.png"  mode="" class="searchIcon"/> 
+      </view>
+  </view>
+  <view class="shops" wx:for="{{shopMsg}}" wx:key="index">
+    <view class="finalShop">
+      <view class="shopMsg" bindtap="another">
+        <view class="shopName">
+          {{item.shopName}}
+        </view>
+        <view class="patterns">
+          <text class="pattern {{index2 == 0? 'special':null}}" wx:for="{{item.patterns}}" wx:for-item = "item2" wx:for-index = "index2" wx:key="index2">{{item2}}</text>
+        </view>
+        <view class="moreMsg">
+          {{item.time}} 
+        </view>
+        <view class="moreMsg">
+          {{item.distance}}
+        </view>
+        <view class="moreMsg">
+          {{item.location}}
+        </view>
+      </view>
+      <view class="menu">
+        <view class="innerContent">
+          <view class="innerWord">
+            去下单
+          </view>
+          <image src="https://roninz.oss-cn-beijing.aliyuncs.com/1.png" mode="" class="innerImg"/>
+          <image src="https://roninz.oss-cn-beijing.aliyuncs.com/2.png" mode="" class="innerImg" bindtap="copy" data-number="{{item.phone}}"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="push">
+    
+  </view>
+</view>
+

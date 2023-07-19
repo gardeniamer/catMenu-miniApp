@@ -1,0 +1,206 @@
+/* pages/components/cart/cart.wxss */
+.cartAll {
+  margin: 0 auto;
+  width: 85%;
+  height: 120rpx;
+  position: fixed;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.cart {
+  width: 80rpx;
+  height: 80rpx;
+  transform: translate(20rpx,20rpx);
+}
+
+.cartWord {
+  transform: translate(40rpx,20rpx);
+  line-height: 50rpx;
+}
+
+.cartWord1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rightTea {
+	height: 160rpx !important;
+	transform: translateY(30rpx) !important;
+}
+
+.cartWord2 {
+  font-size: 12px;
+  color: #000;
+}
+
+.cartWord3 {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  color: #000;
+  
+}
+
+.final {
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #9fd9c2;
+  position: fixed;
+  top: 50%;
+  left: 65%;
+  transform: translateY(-50%);
+  color: #fff;
+  border-radius: 60rpx;
+}
+
+.milkTeas {
+	margin: 0 0 1px 0;
+	width: 100%;
+	height: 240rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.allMilk {
+  width: 100%;
+  height: 100%;
+  background: rgba(222,236,221, .6) url("https://img.js.design/assets/img/64928165a27306875bf90745.png#569ba6258bdba823e72454e24ca94f49");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: scroll;
+}
+
+.teaPhoto,.teaContent,.teaChoose {
+  height: 100%;
+  /* height: 240rpx; */
+}
+
+.teaPhoto,.teaChoose {
+  flex: 1;
+  text-align: center;
+}
+
+.teaContent {
+	flex: 2;
+	margin: 60rpx 0 0 0;
+}
+
+.teaPhoto image {
+	width: 160rpx;
+	height: 200rpx;
+  transform: translateY(20rpx);
+}
+
+.teaName {
+	font-size: 16px;
+	margin: 0 0 0 10px;
+}
+
+.price {
+	font-weight: bold;
+	margin: 10px 0 4px 10px;
+}
+
+.infoMsg {
+  width: 600rpx;
+  height: 100%;
+  background: rgba(222,236,221, .6) url("https://img.js.design/assets/img/64928165a27306875bf90745.png#569ba6258bdba823e72454e24ca94f49");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.top {
+  width: 600rpx;
+  height: 120rpx;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inner {
+  width: 600rpx;
+  height: 65%;
+  overflow: scroll;
+  /* transform: translateY(120rpx); */
+}
+
+.innerWord {
+  margin: 0 auto;
+  width: 560rpx;
+  height: 20%;
+  line-height: 100rpx;
+  font-weight: bold;
+}
+
+.bottom {
+  margin: auto;
+  width: 560rpx;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cancle,.define {
+  width: 200rpx;
+  height: 80rpx;
+  background-color: #a4dac2;
+  text-align: center;
+  color: #fff;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  transform: translateY(10rpx);
+}
+
+.payInner {
+  width: 440rpx;
+  height: 100%;
+  background-color: #fff;
+  background: rgba(222,236,221, .6) url("https://img.js.design/assets/img/6492802168dc0b2f0b46c5d3.png#07b1d618aee2537c07025350fc003283");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.payTop {
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  line-height: 60rpx;
+  font-weight: bold;
+}
+
+.payWays {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.payWay {
+  width: 25%;
+  height: 75%;
+  text-align: center;
+}
+
+.payImg {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.payWord {
+  font-size: 12px;
+  font-weight: bold;
+}

@@ -1,0 +1,76 @@
+/* pages/components/info/moreFL/moreFL.wxss */
+.fl {
+  margin: 30rpx auto 30rpx auto;
+  width: 700rpx;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fl2 {
+  margin: 30rpx auto 30rpx auto;
+  width: 700rpx;
+  height: 160rpx;
+  background-color: #fff;
+  border-radius: 25rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.fl2Left {
+  width: 100rpx;
+  height: 100%;
+  text-align: center;
+  line-height: 70rpx;
+}
+
+.fl2Right {
+  width: 600rpx;
+  height: 100%;
+}
+
+.flLeft,.flRight {
+  width: 320rpx;
+  height: 140rpx;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 25rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftContent {
+  width: 100rpx;
+  height: 100%;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.count {
+  font-size: 18px;
+  color: #4a7868;
+}
+
+.rightContent {
+  width: 220rpx;
+  height: 100%;
+}
+
+.rightImg {
+  width: 90rpx;
+  height: 80rpx;
+  transform: translate(60rpx,50rpx);
+}
+
+.rightImg2 {
+  float: right;
+  width: 90rpx;
+  height: 80rpx;
+  transform: translate(-20rpx,60rpx);
+} 

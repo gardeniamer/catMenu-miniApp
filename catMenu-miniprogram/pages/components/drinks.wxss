@@ -1,0 +1,49 @@
+/* pages/components/drinks.wxss */
+.community {
+  background: rgba(222,236,221, .6) url("https://img.js.design/assets/img/64928165a27306875bf90745.png#569ba6258bdba823e72454e24ca94f49");
+	background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.push {
+	width: 100%;
+	height: 90rpx;
+}
+
+.navBarInfo {
+	width: 60rpx;
+	height: 55rpx;
+	transform: translate(130rpx,16rpx);
+}	
+	
+.navWord {
+	width: 100%;
+	height: 100%;
+  font-size: 16px;
+  font-weight: bold;
+	text-align: center;
+	line-height: 48px;
+}
+
+.drinkSearch {
+	width: 700rpx;
+	height: 100rpx;
+	margin: 10px auto 5px auto;
+	background-color: #fff;
+	border-radius: 50rpx;
+}
+
+.search {
+	float: right;
+	width: 96rpx;
+	height: 96rpx;
+	transform: translate(-3rpx,2rpx);
+}
+
+.searchInput {
+	display: inline-block;
+	width: 500rpx;
+	height: 100rpx;
+	transform: translateX(20px);
+	font-size: 20px;
+}

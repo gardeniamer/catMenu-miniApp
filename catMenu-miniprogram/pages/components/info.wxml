@@ -1,0 +1,72 @@
+<view class="community">
+  <view class="push"></view>
+  <navbar vue-id="7d88a7a8-1" backgroundColor="transparent" border="{{true}}" bind:__l="__l" vue-slots="{{['default']}}" class="navBarEdit">
+    <block>
+      <image class="navBarInfo" src="/static/navigator/neiko.png" mode></image>
+      <view class="navWord">猫谱</view>
+    </block>
+  </navbar>
+  <info-user vue-id="7d88a7a8-2" bind:__l="__l"></info-user>
+  <view class = "myMsg">
+    <view class="myMsgLeft">
+      <image src="https://roninz.oss-cn-beijing.aliyuncs.com/shoucang.png" mode="" class = "msgPhoto" />
+      <view class = "msgWord">
+        我的收藏
+      </view>
+    </view>
+    <view class="myMsgRight">
+      <image src="https://roninz.oss-cn-beijing.aliyuncs.com/paw.png" mode="" class = "msgPhoto" />
+      <view class = "msgWord">
+        我的足迹
+      </view>
+    </view>
+  </view>
+  <info-more vue-id="7d88a7a8-4" bind:__l="__l" vue-slots="{{['top','bottom']}}">
+    <view slot="top">
+      <view class="left">我的订单</view>
+      <view data-event-opts="{{[['tap',[['allMsg',['$event']]]]]}}" class="right" bindtap="__e">查看全部 ></view>
+    </view>
+    <block>
+      <view class="obj" wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index" slot="bottom"
+      data-event-opts="{{[['tap',[['singleMsg1',[index]]]]]}}" bindtap="__e">
+        <image class="moreImg" src="{{item.imgPath}}" mode ></image>
+        <view class="imgContent">{{''+item.imgContent+''}}</view>
+      </view>
+    </block>
+  </info-more>
+  <info-moreFL></info-moreFL>
+  <view class="push3">
+    
+  </view>
+  <!-- <info-more vue-id="7d88a7a8-5" bind:__l="__l" vue-slots="{{['top','bottom']}}">
+    <view class="left" slot="top">常用信息</view>
+    <block>
+      <view class="obj" wx:for="{{list2}}" wx:for-item="item" wx:for-index="index" wx:key="index" slot="bottom"
+      data-event-opts="{{[['tap',[['singleMsg2',[index]]]]]}}" bindtap="__e">
+        <image class="moreImg" src="{{item.imgPath}}" mode ></image>
+        <view class="imgContent">{{''+item.imgContent+''}}</view>
+      </view>
+    </block>
+  </info-more>
+  <info-more vue-id="7d88a7a8-6" bind:__l="__l" vue-slots="{{['top','bottom']}}">
+    <view class="left" slot="top">领养必读</view>
+    <block>
+      <view class="obj" wx:for="{{list3}}" wx:for-item="item" wx:for-index="index" wx:key="index" slot="bottom"
+      data-event-opts="{{[['tap',[['singleMsg3',[index]]]]]}}" bindtap="__e">
+        <image class="moreImg" src="{{item.imgPath}}" mode ></image>
+        <view class="imgContent">{{''+item.imgContent+''}}</view>
+      </view>
+    </block>
+  </info-more>
+  <info-more vue-id="7d88a7a8-7" bind:__l="__l" vue-slots="{{['top','bottom']}}">
+    <view class="left" slot="top">我的服务</view>
+    <block>
+      <view class="obj" wx:for="{{list4}}" wx:for-item="item" wx:for-index="index" wx:key="index" slot="bottom"
+      data-event-opts="{{[['tap',[['singleMsg4',[index]]]]]}}" bindtap="__e">
+        <image class="moreImg" src="{{item.imgPath}}" mode ></image>
+        <view class="imgContent">{{''+item.imgContent+''}}</view>
+      </view>
+    </block>
+  </info-more> -->
+  <view class="push2"></view>
+</view>
